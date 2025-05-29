@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Comissão</title>
+
+  <style>
+    html,
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: sans-serif;
+    }
+
+    input[type="range"],
+    select,
+    input[type="checkbox"] {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #ccc;
+      padding: 4px;
+      border-radius: 4px;
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%);
+      background-position: calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 10px) calc(1em + 2px);
+      background-size: 5px 5px, 5px 5px;
+      background-repeat: no-repeat;
+      padding-right: 30px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      background: #000;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      background: #000;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
